@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 30pt arial     
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        const nome = window.prompt('escreva seu nome')
+        document.write(`Ola <strong>${nome}</strong>, seu nome tem ${nome.length} letras.<br/>`)
+        document.write(`seu nome maiusculo é <strong>${nome.toUpperCase()}</strong><br/>`)
+        document.write(`Seu nome minusculo é <strong>${nome.toLowerCase()}</strong><br/>`)
+// toUpperCase utilizamos para transformar todas as nossas letras em maiusculas.
+// toLowerCase utilizamos para transformar todas as nossas letras em minusculas.
+// strong utilizamos para transformar o nosso texto em negrito.
+
+    /* Aqui nós aprendemos a converção de strings
+
+pórem também temos converção de Numeros */
+
+//Exemplo:
+const n1 = 1548.8
+n1 = replace(',', '.')
+n1.toFixed(2);
+document.write(n1);
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})//Usamo este para escrever alguma valor de uma determinada nação!!
+    </script>
+</body>
+
+</html>
+
+
