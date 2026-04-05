@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font: normal 15pt Arial;
+            background:rgb(0, 0, 0);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height:200px;
+            text-align: center;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="area">fala coco</div>
+
+    <script>
+
+        let ent = document.getElementById('area')
+        ent.addEventListener('click', clicar)
+        ent.addEventListener('mouseenter', entrar)
+        ent.addEventListener('mouseout', sair)
+
+        function clicar(){
+            ent.innerText = 'clicou'
+            ent.style.background = 'orange'
+            
+        }
+        function entrar(){
+            ent.innerText = 'entrou'
+            ent.style.background = 'green'
+
+        }
+         function sair(){
+             ent.innerText = 'saiu';
+             ent.style.background = 'red';
+
+        }
+
+    </script>
+</body>
+</html>
